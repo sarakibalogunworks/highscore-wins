@@ -14,6 +14,13 @@ public class HighscoreWins {
         String teamsPart = parts[0];
         String scoresPart = parts[1];
 
+        String[] teams = teamsPart.split(":");
+        String homeTeam = teams[0];
+        String visitorTeam = teams[1];
+
+
+
+
 
     }
 }
