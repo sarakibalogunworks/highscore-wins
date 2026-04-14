@@ -16,7 +16,22 @@ public class HighscoreWins {
 
         String[] teams = teamsPart.split(":");
         String homeTeam = teams[0];
-        String visitorTeam = teams[1];
+        String visitorsTeam = teams[1];
+
+
+        String[] scores = scoresPart.split(":");
+        int homeScore = Integer.parseInt(scores[0]);
+        int visitorsScore = Integer.parseInt(scores[1]);
+
+
+        String winner;
+        if (homeScore > visitorsScore){
+            winner =homeTeam;
+        } else {
+            winner = visitorsTeam;
+        }
+
+        System.out.println("Winner: " + winner);
 
 
 
